@@ -18,23 +18,8 @@ copies or substantial portions of the Software.
 // Rust of Life
 // Copyright (c) 2024 Marcos Pardo
 
+use crate::cell::*;
 use rand::Rng;
-
-#[repr(u8)]
-#[derive(Clone, Copy, Debug, PartialEq, Eq)]
-pub enum CellState {
-    Dead = 0,
-    Alive = 1,
-}
-
-#[derive(Clone, Copy, Debug, PartialEq, Eq)]
-pub struct Cell {
-    pub state: CellState,
-    pub x: i32,
-    pub y: i32,
-    pub size: i32,
-}
-
 pub struct Universe {
     width: u32,
     height: u32,

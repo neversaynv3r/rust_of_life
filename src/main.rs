@@ -1,9 +1,11 @@
 // Rust of Life
 // Copyright (c) 2024 Marcos Pardo
 
+use crate::cell::*;
 use raylib::prelude::*;
 use std::env::args;
 
+mod cell;
 mod universe;
 use universe::*;
 
